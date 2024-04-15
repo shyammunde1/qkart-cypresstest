@@ -1,0 +1,9 @@
+# Node modules
+node_modules/
+
+# Cypress generated files
+cypress/videos/
+cypress/screenshots/
+
+# OS generated files
+.DS_Store
