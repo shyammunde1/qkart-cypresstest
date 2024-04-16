@@ -43,6 +43,34 @@ Cypress.Commands.add("goToExplorePage", () => {
   registerPage.getExploreButton().click();
 });
 
+// ############### login command ######
+
+Cypress.Commands.add("loginApiCall", ({ username, password }) => {
+  cy.get("#username").type(username);
+  cy.get("#password").type(password);
+  cy.get(".MuiStack-root > .MuiButtonBase-root").click();
+
+  // Wait for login success
+  cy.url().should("include", "/login"); // Assuming successful login redirects away from the login page
+
+  // Wait for the token to be set in localStorage
+  cy.wait(2000); // Adjust the wait time as needed
+
+  // Retrieve the token from localStorage
+  const token = window.localStorage.getItem("token");
+  console.log(token);
+
+  // Store the token in a Cypress variable for later use
+  Cypress.env("token", token);
+});
+
+Cypress.Commands.add("mockLoginError", (errorMessage) => {
+  cy.intercept("POST", `${Cypress.env("QKART_BACKEND")}/auth/login`, {
+    statusCode: 400,
+    body: { success: false, message: errorMessage },
+  }).as("loginRequest");
+});
+
 // -- This is a child command --
 // Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
 //

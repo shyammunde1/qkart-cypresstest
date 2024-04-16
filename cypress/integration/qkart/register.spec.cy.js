@@ -4,16 +4,14 @@ const registerPage = new RegisterPage();
 
 describe("Register Page", () => {
   beforeEach(() => {
-    // Log the value of QKART_URL before visiting the page
     cy.log("QKART_URL:", Cypress.env("QKART_FRONTEND"));
 
-    // Check if QKART_URL is undefined, log a message if it is
     if (!Cypress.env("QKART_FRONTEND")) {
       cy.log("QKART_URL is not defined");
     }
 
-    // Visit the register page with QKART_URL
-    cy.visit(`${Cypress.env("QKART_FRONTEND")}/register`);
+    // cy.visit(`${Cypress.env("QKART_FRONTEND")}/register`);
+    registerPage.visitRegisterPage();
   });
 
   it("should display register form", () => {
