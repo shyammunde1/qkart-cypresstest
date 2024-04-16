@@ -2,65 +2,65 @@ import ProductsPage from "../pageObjects/ProductsPage";
 
 const productPage = new ProductsPage();
 
-// describe("Products Page - Header", () => {
-//   beforeEach(() => {
-//     productPage.visitProductsPage();
-//   });
+describe("Products Page - Header", () => {
+  beforeEach(() => {
+    productPage.visitProductsPage();
+  });
 
-//   it("should have a header with logo", () => {
-//     productPage.getLogo().should("exist");
-//   });
+  it("should have a header with logo", () => {
+    productPage.getLogo().should("exist");
+  });
 
-//   it("should have login button on Header route to login page", () => {
-//     productPage.getLoginButton().click();
-//     cy.url().should("include", "/login");
-//   });
+  it("should have login button on Header route to login page", () => {
+    productPage.getLoginButton().click();
+    cy.url().should("include", "/login");
+  });
 
-//   it("should have register button on Header route to register page when logged out", () => {
-//     productPage.getRegisterButton().click();
-//     cy.url().should("include", "/register");
-//   });
+  it("should have register button on Header route to register page when logged out", () => {
+    productPage.getRegisterButton().click();
+    cy.url().should("include", "/register");
+  });
 
-//   it("should have a search bar", () => {
-//     productPage.getSearchBar().should("exist");
-//   });
-// });
+  it("should have a search bar", () => {
+    productPage.getSearchBar().should("exist");
+  });
+});
 
-// describe("Products Page - Header: Logged in", () => {
-//   beforeEach(() => {
-//     // Load the fixture containing valid credentials
-//     cy.fixture("login.json").then((credentials) => {
-//       const user = credentials.validCredentials.username;
-//       const password = credentials.validCredentials.password;
+describe("Products Page - Header: Logged in", () => {
+  beforeEach(() => {
+    // Load the fixture containing valid credentials
+    cy.fixture("login.json").then((credentials) => {
+      const user = credentials.validCredentials.username;
+      const password = credentials.validCredentials.password;
 
-//       productPage.visitProductsPage();
-//       productPage.getLoginButton().click();
+      productPage.visitProductsPage();
+      productPage.getLoginButton().click();
 
-//       // Use the custom login command with username and password
-//       cy.loginApiCall({ username: user, password: password });
-//     });
-//   });
+      // Use the custom login command with username and password
+      cy.loginApiCall({ username: user, password: password });
+    });
+  });
 
-//   it("should have username & avatar in header if logged in", () => {
-//     productPage.getUserName().should("be.visible");
-//     productPage.getAvatar().should("be.visible");
-//   });
+  it("should have username & avatar in header if logged in", () => {
+    productPage.getUserName().should("be.visible");
+    productPage.getAvatar().should("be.visible");
+  });
 
-//   it("should have logout button in header when logged in", () => {
-//     productPage.getLogoutBtn().should("be.visible");
-//   });
+  it("should have logout button in header when logged in", () => {
+    productPage.getLogoutBtn().should("be.visible");
+  });
 
-//   it.only("logout button should clear local storage items", () => {
-//     productPage.getLogoutBtn().click();
+  it("logout button should clear local storage items", () => {
+    productPage.getLogoutBtn().click();
 
-//     // Assert local storage items are cleared
-//     cy.window().then((win) => {
-//       expect(win.localStorage.getItem("username")).to.be.null;
-//       expect(win.localStorage.getItem("token")).to.be.null;
-//       expect(win.localStorage.getItem("balance")).to.be.null;
-//     });
-//   });
-// });
+    // Assert local storage items are cleared
+    cy.window().then((win) => {
+      expect(win.localStorage.getItem("username")).to.be.null;
+      expect(win.localStorage.getItem("token")).to.be.null;
+      expect(win.localStorage.getItem("balance")).to.be.null;
+    });
+  });
+});
 
 describe("Products Page", () => {
   beforeEach(() => {

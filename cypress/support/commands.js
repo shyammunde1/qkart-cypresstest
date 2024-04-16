@@ -45,6 +45,36 @@ Cypress.Commands.add("goToExplorePage", () => {
 
 // ############### login command ######
 
+Cypress.Commands.add("loginForCart", () => {
+  cy.fixture("login.json").then((loginData) => {
+    return cy
+      .request({
+        method: "POST",
+        url: "https://qkart-frontend1-jfw4.onrender.com/api/v1/auth/login",
+        body: {
+          username: loginData.validCredentials.username,
+          password: loginData.validCredentials.password,
+        },
+        failOnStatusCode: false, // Prevent Cypress from failing the test on non-2xx responses
+      })
+      .then((response) => {
+        if (response.status === 200 || response.status === 201) {
+          const token = response.body.token;
+          const user = response.body.username;
+          const balance = response.body.balance;
+          Cypress.env("token", token);
+          Cypress.env("username", user);
+          Cypress.env("balance", balance);
+          return response; // Return the response to the test
+        } else {
+          throw new Error(
+            `Login request failed with status: ${response.status}`
+          );
+        }
+      });
+  });
+});
+
 Cypress.Commands.add("loginApiCall", ({ username, password }) => {
   cy.get("#username").type(username);
   cy.get("#password").type(password);
