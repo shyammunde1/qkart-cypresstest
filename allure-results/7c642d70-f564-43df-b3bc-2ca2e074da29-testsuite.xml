@@ -1,0 +1,79 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1713357042029' stop='1713357062311'>
+    <name>Register Page</name>
+    <title>Register Page</title>
+    <test-cases>
+        <test-case start='1713357042029' status='passed' stop='1713357048614'>
+            <name>should display register form</name>
+            <title>should display register form</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357048689' status='passed' stop='1713357050066'>
+            <name>should show error message if username is empty</name>
+            <title>should show error message if username is empty</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357050097' status='passed' stop='1713357052251'>
+            <name>should show error message if username is less than 6 characters</name>
+            <title>should show error message if username is less than 6 characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357052283' status='passed' stop='1713357053459'>
+            <name>should show error message if password is empty</name>
+            <title>should show error message if password is empty</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357053528' status='passed' stop='1713357055158'>
+            <name>should show error message if password is less than 6 characters</name>
+            <title>should show error message if password is less than 6 characters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357055202' status='passed' stop='1713357056910'>
+            <name>should show error message if password and confirm password are not same</name>
+            <title>should show error message if password and confirm password are not same</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357056954' status='passed' stop='1713357059395'>
+            <name>should send a successful POST request to register a new user</name>
+            <title>should send a successful POST request to register a new user</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357059439' status='passed' stop='1713357061468'>
+            <name>should show error alert with message sent from backend if registration fails</name>
+            <title>should show error alert with message sent from backend if registration fails</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357061512' status='passed' stop='1713357062311'>
+            <name>'back to explore' button on Header should route to products</name>
+            <title>'back to explore' button on Header should route to products</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

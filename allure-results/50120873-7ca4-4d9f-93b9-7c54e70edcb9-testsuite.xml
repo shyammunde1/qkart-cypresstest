@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1713357104212' stop='1713357131009'>
+    <name>Shopping Cart Functionality</name>
+    <title>Shopping Cart Functionality</title>
+    <test-cases>
+        <test-case start='1713357104212' status='passed' stop='1713357118407'>
+            <name>should fetch products and display them</name>
+            <title>should fetch products and display them</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357118459' status='passed' stop='1713357122946'>
+            <name>should add product to cart</name>
+            <title>should add product to cart</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357122991' status='passed' stop='1713357126346'>
+            <name>should remove product from cart</name>
+            <title>should remove product from cart</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357126406' status='passed' stop='1713357131007'>
+            <name>should navigate to checkout page</name>
+            <title>should navigate to checkout page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

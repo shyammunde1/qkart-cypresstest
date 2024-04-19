@@ -20,7 +20,7 @@ module.exports = defineConfig({
     saveAllAttempts: false,
   },
   projectId: "d2pyp7",
-
+  video: false,
   e2e: {
     setupNodeEvents,
     specPattern: "cypress/integration/qkart/*.js",

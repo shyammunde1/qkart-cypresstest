@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1713357193629' stop='1713357203154'>
+    <name>Products Page - Header</name>
+    <title>Products Page - Header</title>
+    <test-cases>
+        <test-case start='1713357193629' status='passed' stop='1713357200978'>
+            <name>should have a header with logo</name>
+            <title>should have a header with logo</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357201028' status='passed' stop='1713357201883'>
+            <name>should have login button on Header route to login page</name>
+            <title>should have login button on Header route to login page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357201917' status='passed' stop='1713357202541'>
+            <name>should have register button on Header route to register page when logged out</name>
+            <title>should have register button on Header route to register page when logged out</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357202570' status='passed' stop='1713357203112'>
+            <name>should have a search bar</name>
+            <title>should have a search bar</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,127 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1713357135971' stop='1713357161077'>
+    <name>Checkout Page</name>
+    <title>Checkout Page</title>
+    <test-cases>
+        <test-case start='1713357135971' status='passed' stop='1713357141877'>
+            <name>should retrieve products</name>
+            <title>should retrieve products</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357141914' status='passed' stop='1713357143289'>
+            <name>should retrieve addresses of the user</name>
+            <title>should retrieve addresses of the user</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357143314' status='passed' stop='1713357144744'>
+            <name>should show items by parsing the response data</name>
+            <title>should show items by parsing the response data</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357144779' status='passed' stop='1713357145810'>
+            <name>should not allow to edit quantity</name>
+            <title>should not allow to edit quantity</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357145847' status='passed' stop='1713357147526'>
+            <name>should show user addresses</name>
+            <title>should show user addresses</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357147559' status='passed' stop='1713357148672'>
+            <name>should have delete button for user addresses</name>
+            <title>should have delete button for user addresses</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357148698' status='passed' stop='1713357149678'>
+            <name>should have add new address button</name>
+            <title>should have add new address button</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357149723' status='passed' stop='1713357150604'>
+            <name>should have a place order button</name>
+            <title>should have a place order button</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357150636' status='passed' stop='1713357151740'>
+            <name>should show error message if no address selected for checkout</name>
+            <title>should show error message if no address selected for checkout</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357151764' status='passed' stop='1713357152962'>
+            <name>should show error message if low balance</name>
+            <title>should show error message if low balance</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357152998' status='passed' stop='1713357154097'>
+            <name>has add new address button which shows textfield with action buttons</name>
+            <title>has add new address button which shows textfield with action buttons</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357154127' status='passed' stop='1713357157316'>
+            <name>allows to add new address</name>
+            <title>allows to add new address</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357157357' status='passed' stop='1713357158427'>
+            <name>allows to delete address</name>
+            <title>allows to delete address</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357158454' status='passed' stop='1713357159752'>
+            <name>should make an API call on clicking make payement button</name>
+            <title>should make an API call on clicking make payement button</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357159788' status='passed' stop='1713357161077'>
+            <name>should route to '/thanks' after checkout successful</name>
+            <title>should route to '/thanks' after checkout successful</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

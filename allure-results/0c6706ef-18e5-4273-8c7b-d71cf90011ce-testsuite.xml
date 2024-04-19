@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1713357178712' stop='1713357188521'>
+    <name>Login Page Login form Submission</name>
+    <title>Login Page Login form Submission</title>
+    <test-cases>
+        <test-case start='1713357178748' status='passed' stop='1713357182737'>
+            <name>should send a POST request to the backend with valid credentials</name>
+            <title>should send a POST request to the backend with valid credentials</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357182769' status='passed' stop='1713357184545'>
+            <name>should show error alert with message sent from backend if request fails with invalid credentials</name>
+            <title>should show error alert with message sent from backend if request fails with invalid credentials</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357184608' status='passed' stop='1713357188521'>
+            <name>should redirect to products page after success with valid credentials</name>
+            <title>should redirect to products page after success with valid credentials</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

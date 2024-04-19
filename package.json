@@ -8,7 +8,7 @@
     "headTest": "npm run test -- --headed",
     "chromeTest": "npm run test -- --browser chrome --parallel",
     "run": "npx cypress open",
-    "browser:chrome": "npx cypress run --browser=chrome --headed --spec cypress/integration/qkart/register.spec.cy.js --reporter mocha-allure-reporter",
+    "browser:chrome": "npx cypress run --browser=chrome --headed --spec cypress/integration/qkart/*.cy.js --reporter mocha-allure-reporter",
     "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report"
   },
   "keywords": [],

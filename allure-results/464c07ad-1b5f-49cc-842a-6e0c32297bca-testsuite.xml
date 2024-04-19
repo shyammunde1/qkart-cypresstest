@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1713357203159' stop='1713357214821'>
+    <name>Products Page - Header: Logged in</name>
+    <title>Products Page - Header: Logged in</title>
+    <test-cases>
+        <test-case start='1713357203175' status='passed' stop='1713357207002'>
+            <name>should have username &amp; avatar in header if logged in</name>
+            <title>should have username &amp; avatar in header if logged in</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357207070' status='passed' stop='1713357210580'>
+            <name>should have logout button in header when logged in</name>
+            <title>should have logout button in header when logged in</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357210606' status='passed' stop='1713357214783'>
+            <name>logout button should clear local storage items</name>
+            <title>logout button should clear local storage items</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

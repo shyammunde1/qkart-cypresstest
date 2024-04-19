@@ -1,0 +1,71 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1713357214824' stop='1713357242883'>
+    <name>Products Page</name>
+    <title>Products Page</title>
+    <test-cases>
+        <test-case start='1713357214866' status='passed' stop='1713357216592'>
+            <name>should make a GET request to load products</name>
+            <title>should make a GET request to load products</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357216645' status='passed' stop='1713357218575'>
+            <name>shows items on the products page load</name>
+            <title>shows items on the products page load</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357218576' status='passed' stop='1713357222732'>
+            <name>should make a GET request to search</name>
+            <title>should make a GET request to search</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357222782' status='passed' stop='1713357224842'>
+            <name>should show all products if search empty</name>
+            <title>should show all products if search empty</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357224874' status='passed' stop='1713357228371'>
+            <name>should show matching products if found</name>
+            <title>should show matching products if found</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357228410' status='passed' stop='1713357232556'>
+            <name>should show 'No Products Found' if search string does not get any items</name>
+            <title>should show 'No Products Found' if search string does not get any items</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357232592' status='passed' stop='1713357238337'>
+            <name>updates search items as search string updates</name>
+            <title>updates search items as search string updates</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1713357238376' status='passed' stop='1713357242882'>
+            <name>debounces the searching API calls</name>
+            <title>debounces the searching API calls</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
